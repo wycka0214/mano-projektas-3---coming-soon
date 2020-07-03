@@ -1,0 +1,45 @@
+.mouse {
+    display: inline-block;
+    height: 120px;
+    width: 80px;
+    border: 10px solid #fff;
+    border-radius: 40px;
+}
+    .mouse > .wheel {
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+
+        /* background-image: url(../img/mouse.webp);
+        background-size: cover; */
+
+        animation-name: judejimas;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate; */
+        /* animation-fill-mode: both; */
+        /* animation-timing-function: cubic-bezier(0.55, 0.13, 0.28, 1.15); */
+    }
+        .mouse > .wheel:hover {
+            animation-play-state: paused;
+        }
+
+@keyframes judejimas {
+    0% {
+        margin-top: 20px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        margin-top: 50px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
