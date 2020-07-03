@@ -40,7 +40,6 @@
                 animation-iteration-count: infinite;
                 animation-duration: 3s;
             }
-
 @keyframes loading {
     0% {
         width: 0%;
