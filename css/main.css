@@ -65,14 +65,14 @@
     .hero > .mouse {
         display: inline-block;
     }    
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .hero {
          width: 100%;
          margin: 60px 0 20px;
          padding: 0 20px;
         }
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .clock > .time {
         width: 50%;
     }
@@ -245,6 +245,9 @@
     }
     .footer > .btn {
         display: none;
+    }
+    .footer > .credits p {
+        width: 500px;
     }
 }
 @media (max-width: 600px) {
