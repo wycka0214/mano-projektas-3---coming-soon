@@ -3,7 +3,7 @@
     width: 100%;    
 }
 .bg-blue {
-    background-color: #6FB2F8;
+    background-color: #03A9F4;
 }
 .min-height {
     min-height: 100vh;
@@ -11,23 +11,25 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .hero {
     display: inline-block;
     width: 600px;
-    margin: 60px calc( (100% - 600px) / 2 ) 20px;
+    margin: 150px calc( (100% - 600px) / 2 ) 40px;
     text-align: center;
 }
     .hero > img {
         display: inline-block;
         margin-bottom: 60px;
+        width: 60px;
     }
     .hero > h1 {
         display: inline-block;
         width: 100%;
-        margin-bottom: 25px;
-        font-size: 60px;
-        line-height: 60px;
+        margin-bottom: 40px;
+        font-size: 90px;
+        line-height: 90px;
         text-transform: uppercase;
     }
     .hero > p {
@@ -36,6 +38,7 @@
         margin-bottom: 40px;
         font-size: 20px;
         line-height: 25px;
+        color: rgb(144, 144, 144);
     }
     .hero > .clock {
         display: inline-block;
@@ -58,32 +61,22 @@
     .hero > .mouse {
         display: inline-block;
     }
-@media (max-width: 700px) {
-    .hero {
-        width: 100%;
-        margin: 60px 0 20px;
-        padding: 0 20px;
-    }
-}
-@media (max-width: 450px) {
-    .clock > .time {
-        width: 50%;
-    }
 .content {
     display: inline-block;
     width: 1100px;
     margin: 60px calc( (100% - 1100px) / 2 );
+    color: rgb(144, 144, 144);
 }
     .content > .left {
         display: inline-block;
         width: 50%;
         float: left;
-    }
+        }
     .content > .right {
         display: inline-block;
         width: 40%;
         float: right;
-    }
+        }
     .content h3 {
         display: inline-block;
         width: 100%;
@@ -161,7 +154,7 @@
 }
     .footer > .btn {
         position: absolute;
-        top: -30px;
+        top: -20px;
         right: -20px;
     }
     .footer > .socials {
@@ -171,13 +164,11 @@
         margin-bottom: 20px;
         border-bottom: 1px solid #fff;
     }
-        .footer > .socials > a {
+        .footer a {
             width: 40px;
             padding: 10px;
             color: #fff;
             text-decoration: none;
-            font-size: 20px;
-            line-height: 20px;
         }
             .footer > .socials > a:hover {
                 background-color: #fff;
@@ -190,28 +181,46 @@
         margin: 0 calc( (100% - 600px) / 2 );
         font-size: 18px;
         line-height: 36px;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.5);
     }
         .footer > .credits > img {
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
         }
         .footer > .credits > div {
             display: inline-block;
-            width: 100%;
+            width: 60%;           
+            padding: 10px;
         }
             .footer > .credits span {
                 display: inline-block;
+                float: left;
             }
                 .footer span > a {
                     display: inline-block;
                     color: #fff;
                     text-decoration: none;
+                    color: rgba(255, 255, 255, 0.8);
                 }
         .footer > .credits > p {
             display: inline-block;
             width: 100%;
         }
+        .footer > .credits > p a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+@media (max-width: 700px) {
+    .hero {
+         width: 100%;
+         margin: 60px 0 20px;
+         padding: 0 20px;
+          }
+}
+@media (max-width: 450px) {
+    .clock > .time {
+        width: 50%;
+}
 @media (max-width: 1200px) {
     .footer {
         width: 900px;
