@@ -58,15 +58,29 @@
         .hero > form > input::placeholder {
             color: #fff;
         }
+        #email {
+            opacity: 0.75;
+        }
     .hero > .mouse {
         display: inline-block;
+    }    
+@media (max-width: 700px) {
+    .hero {
+         width: 100%;
+         margin: 60px 0 20px;
+         padding: 0 20px;
+        }
+}
+@media (max-width: 450px) {
+    .clock > .time {
+        width: 50%;
     }
+}
 .content {
     display: inline-block;
     width: 1100px;
     margin: 60px calc( (100% - 1100px) / 2 );
-    color: rgb(144, 144, 144);
-}
+    }
     .content > .left {
         display: inline-block;
         width: 50%;
@@ -76,7 +90,7 @@
         display: inline-block;
         width: 40%;
         float: right;
-        }
+    }
     .content h3 {
         display: inline-block;
         width: 100%;
@@ -89,10 +103,12 @@
         margin-bottom: 20px;
         font-size: 17px;
         line-height: 22px;
+        color: #777b;
     }
         .content p > a {
             text-decoration: none;
             color: red;
+            opacity: 0.7;
         }
     .content .progress-bar {
         display: inline-block;
@@ -101,6 +117,7 @@
     .content form {
         display: inline-block;
         width: 100%;
+        opacity: 0.75;
     }
         .content form input {
             width: 45%;
@@ -165,7 +182,7 @@
         border-bottom: 1px solid #fff;
     }
         .footer a {
-            width: 40px;
+            width: 48px;
             padding: 10px;
             color: #fff;
             text-decoration: none;
@@ -177,29 +194,28 @@
             }
     .footer > .credits {
         display: inline-block;
-        width: 600px;
-        margin: 0 calc( (100% - 600px) / 2 );
+        width: 800px;
+        margin: 0 calc( (100% - 800px) / 2 );
         font-size: 18px;
         line-height: 36px;
         color: rgba(255, 255, 255, 0.5);
     }
         .footer > .credits > img {
             display: inline-block;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
         }
         .footer > .credits > div {
             display: inline-block;
-            width: 60%;           
+            width: 100%;           
             padding: 10px;
-        }
+            box-sizing: unset; 
+         }             
             .footer > .credits span {
-                display: inline-block;
-                float: left;
-            }
-                .footer span > a {
-                    display: inline-block;
+                display: inline-block; 
+            } 
+                .footer span > a {                
+                    width: fit-content;
                     color: #fff;
-                    text-decoration: none;
                     color: rgba(255, 255, 255, 0.8);
                 }
         .footer > .credits > p {
@@ -208,19 +224,7 @@
         }
         .footer > .credits > p a {
             color: rgba(255, 255, 255, 0.8);
-        }
-        
-@media (max-width: 700px) {
-    .hero {
-         width: 100%;
-         margin: 60px 0 20px;
-         padding: 0 20px;
-          }
-}
-@media (max-width: 450px) {
-    .clock > .time {
-        width: 50%;
-}
+        }        
 @media (max-width: 1200px) {
     .footer {
         width: 900px;
