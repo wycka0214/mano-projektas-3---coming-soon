@@ -59,9 +59,6 @@
         .hero > form > input::placeholder {
             color: #fff;
         }
-        #email {
-            opacity: 0.75;
-        }
     .hero > .mouse {
         display: inline-block;
     }    
@@ -109,7 +106,6 @@
         .content p > a {
             text-decoration: none;
             color: red;
-            opacity: 0.7;
         }
     .content .progress-bar {
         display: inline-block;
@@ -118,7 +114,6 @@
     .content form {
         display: inline-block;
         width: 100%;
-        opacity: 0.75;
     }
         .content form input {
             width: 45%;
@@ -126,6 +121,9 @@
         }
         .content form input[name="email"] {
             float: right;
+        }
+        .content .progress-bar .label {
+            opacity: 0.75;
         }
 @media (max-width: 1200px) {
     .content {
