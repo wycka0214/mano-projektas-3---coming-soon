@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-columns: 10% 5% 60% 5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . c1 . ."
+        ". c2 c2 c2 ."
+        ". c3 c3 c3 ."
+        ". . c4 . .";
+}
+
+.c1 {
+    grid-area: c1;
+}
+.c2 {
+    grid-area: c2;
+}
+.c3 {
+    grid-area: c3;
+}
+.c4 {
+    grid-area: c4;
+}

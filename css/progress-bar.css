@@ -38,7 +38,6 @@
                 background-color: #137ef1;
                 animation: loading 2s ease-in-out 0s 1 normal forwards;
             }
-
 @keyframes loading {
     0% {
         width: 0%;
@@ -47,6 +46,6 @@
     100% {
         width: 100%;
         border-radius: 5px;
-        background-color: #03A9F3;
+        background-color: #2594c7;
     }
 }
